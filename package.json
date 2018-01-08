@@ -1,0 +1,36 @@
+{
+  "name": "koa2-webpack",
+  "version": "1.0.0",
+  "description": "> 在koa2中结合webpack实现热更新",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianlongo/koa2-webpack.git"
+  },
+  "keywords": [],
+  "author": "qianlongo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianlongo/koa2-webpack/issues"
+  },
+  "homepage": "https://github.com/qianlongo/koa2-webpack#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.9",
+    "precommit-hook": "^3.0.0",
+    "standard": "^10.0.3"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "koa-compose": "^4.0.0",
+    "koa2-connect": "^1.0.2",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-hot-middleware": "^2.21.0"
+  }
+}
